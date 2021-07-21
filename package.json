@@ -1,6 +1,6 @@
 {
   "name": "gitify",
-  "version": "4.2.1",
+  "version": "4.2.2",
   "description": "GitHub Notifications on your menu bar.",
   "main": "main.js",
   "scripts": {
@@ -104,6 +104,9 @@
       ],
       "category": "Development",
       "maintainer": "Emmanouil Konstantinidis"
+    },
+    "deb": {
+      "depends": ["gconf2", "gconf-service", "libnotify4", "libayatana-appindicator1", "libxtst6", "libnss3"]
     },
     "afterSign": "scripts/notarize.js"
   },
